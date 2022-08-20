@@ -7,9 +7,13 @@
     }
   },
   "extends": ["airbnb"],
+  "plugins": [
+      "better-styled-components"
+  ],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
+    "better-styled-components/sort-declarations-alphabetically": 2
   },
   "env": {
     "browser": true
