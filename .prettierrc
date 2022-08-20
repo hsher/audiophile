@@ -1,5 +1,11 @@
 {
-  "printWidth": 80,
+  "semi": true,
   "tabWidth": 2,
-  "semi": true
+  "printWidth": 100,
+  "singleQuote": false,
+  "trailingComma": "none",
+  "jsxBracketSameLine": true,
+  "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
