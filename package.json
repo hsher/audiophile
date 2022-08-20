@@ -43,6 +43,13 @@
   "resolutions": {
     "styled-components": "^5"
   },
+  "lint-staged": {
+    "**/*.+(js|jsx|html)": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "eslint-config-airbnb": "19.0.4",
     "eslint-plugin-import": "^2.25.3",
