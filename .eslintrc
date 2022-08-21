@@ -6,7 +6,7 @@
       "jsx": true
     }
   },
-  "extends": ["airbnb"],
+  "extends": ["airbnb", "prettier", "plugin:jsx-a11y/recommended"],
   "plugins": [
       "better-styled-components",
       "sort-destructure-keys"
