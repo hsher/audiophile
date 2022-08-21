@@ -19,6 +19,7 @@
     "sort-destructure-keys/sort-destructure-keys": [2, {"caseSensitive": false}]
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "jest": true
   }
 }
