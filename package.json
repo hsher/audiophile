@@ -12,15 +12,16 @@
     "eslint-plugin-better-styled-components": "^1.1.2",
     "eslint-plugin-sort-destructure-keys": "^1.4.0",
     "lint-staged": "^13.0.3",
-    "next": "^12.2.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "DISABLE_ESLINT_PLUGIN=true start",
-    "build": "DISABLE_ESLINT_PLUGIN=true build",
+    "start": "DISABLE_ESLINT_PLUGIN=true next start",
+    "build": "DISABLE_ESLINT_PLUGIN=true next build",
+    "dev": "DISABLE_ESLINT_PLUGIN=true next dev",
     "test": "DISABLE_ESLINT_PLUGIN=true test",
     "prepare": "husky install"
   },
