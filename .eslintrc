@@ -6,17 +6,28 @@
       "jsx": true
     }
   },
-  "extends": ["airbnb", "prettier", "plugin:jsx-a11y/recommended"],
+  "extends": [
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "prettier",
+  ],
   "plugins": [
       "better-styled-components",
       "sort-destructure-keys",
-      "jsx-a11y"
+      "jsx-a11y",
+      "@typescript-eslint"
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
     "better-styled-components/sort-declarations-alphabetically": 2,
-    "sort-destructure-keys/sort-destructure-keys": [2, {"caseSensitive": false}]
+    "sort-destructure-keys/sort-destructure-keys": [2, {"caseSensitive": false}],
+    "prefer-const": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error"
   },
   "env": {
     "browser": true,

@@ -3,9 +3,10 @@
   "tabWidth": 2,
   "printWidth": 100,
   "singleQuote": false,
-  "trailingComma": "none",
+  "trailingComma": "es5",
   "jsxBracketSameLine": true,
   "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
   "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true
+  "importOrderSortSpecifiers": true,
+  "useTabs": false
 }
