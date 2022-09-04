@@ -23,7 +23,7 @@
     "start": "DISABLE_ESLINT_PLUGIN=true next start",
     "build": "DISABLE_ESLINT_PLUGIN=true next build",
     "dev": "DISABLE_ESLINT_PLUGIN=true next dev",
-    "test": "DISABLE_ESLINT_PLUGIN=true test",
+    "test": "DISABLE_ESLINT_PLUGIN=true jest",
     "prepare": "husky install"
   },
   "eslintConfig": {
