@@ -48,7 +48,7 @@
     "styled-components": "^5"
   },
   "lint-staged": {
-    "**/*.+(js|jsx|html)": [
+    "**/*.+(js|jsx|ts|tsx|html)": [
       "eslint --fix",
       "prettier --write",
       "git add"
