@@ -1,6 +1,5 @@
 import { func, node, oneOf } from "prop-types";
-import buttonActionElements from "src/design-system/constants/buttonActionElements";
-import buttonActionThemes from "src/design-system/constants/buttonActionThemes";
+import { buttonActionElements, buttonActionThemes } from "src/design-system/constants";
 
 import * as S from "./styled";
 

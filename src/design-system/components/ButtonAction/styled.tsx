@@ -1,5 +1,5 @@
 import { BLACK, OCHRE, WHITE } from "src/design-system/colors";
-import buttonActionThemes from "src/design-system/constants/buttonActionThemes";
+import { baseFont, buttonActionThemes } from "src/design-system/constants";
 import styled, { css } from "styled-components";
 
 const buttonThemeStyles = {
@@ -36,7 +36,7 @@ export const ButtonActionBase = styled.button`
   align-items: center;
   border: 0;
   display: flex;
-  font-family: Manrope, "sans-serif";
+  font-family: ${baseFont};
   font-size: 13px;
   font-weight: 700;
   height: 48px;

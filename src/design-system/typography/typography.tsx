@@ -1,7 +1,8 @@
+import { baseFont } from "src/design-system/constants";
 import styled from "styled-components";
 
 export const PrimaryLarge = styled.h1`
-  font-family: Manrope, "sans-serif";
+  font-family: ${baseFont};
   font-size: 56px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -10,7 +11,7 @@ export const PrimaryLarge = styled.h1`
 `;
 
 export const PrimaryMedium = styled.h2`
-  font-family: Manrope, "sans-serif";
+  font-family: ${baseFont};
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 1.42857px;
@@ -19,7 +20,7 @@ export const PrimaryMedium = styled.h2`
 `;
 
 export const PrimarySmall = styled.h3`
-  font-family: Manrope, "sans-serif";
+  font-family: ${baseFont};
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1.14286px;
@@ -28,7 +29,7 @@ export const PrimarySmall = styled.h3`
 `;
 
 export const SecondaryLarge = styled.h4`
-  font-family: Manrope, "sans-serif";
+  font-family: ${baseFont};
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -37,7 +38,7 @@ export const SecondaryLarge = styled.h4`
 `;
 
 export const SecondaryMedium = styled.h5`
-  font-family: Manrope, "sans-serif";
+  font-family: ${baseFont};
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1.71429px;
@@ -46,7 +47,7 @@ export const SecondaryMedium = styled.h5`
 `;
 
 export const SecondarySmall = styled.h6`
-  font-family: Manrope, "sans-serif";
+  font-family: ${baseFont};
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1.28571px;
@@ -55,7 +56,7 @@ export const SecondarySmall = styled.h6`
 `;
 
 export const Wide = styled.p`
-  font-family: Manrope, "sans-serif";
+  font-family: ${baseFont};
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 10px;
@@ -64,7 +65,7 @@ export const Wide = styled.p`
 `;
 
 export const Caps = styled.p`
-  font-family: Manrope, "sans-serif";
+  font-family: ${baseFont};
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.928571px;
@@ -73,7 +74,7 @@ export const Caps = styled.p`
 `;
 
 export const Body = styled.p`
-  font-family: Manrope, "sans-serif";
+  font-family: ${baseFont};
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
