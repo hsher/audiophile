@@ -1,36 +1,51 @@
+import { BLACK, OCHRE, WHITE } from "src/design-system/colors";
 import buttonActionThemes from "src/design-system/constants/buttonActionThemes";
 import styled, { css } from "styled-components";
 
 const buttonThemeStyles = {
   [buttonActionThemes.PRIMARY]: css`
-    //Some css
+    background-color: ${OCHRE};
+    color: ${WHITE};
 
     &:hover {
-      //Some css
-    }
-
-    &:active {
-      //Some css
+      filter: brightness(120%);
     }
   `,
   [buttonActionThemes.SECONDARY]: css`
-    //Some css
+    border: 1px solid ${BLACK};
+    color: ${BLACK};
 
     &:hover {
-      //Some css
-    }
-
-    &:active {
-      //Some css
+      background-color: ${BLACK};
+      color: ${WHITE};
     }
   `,
-  // ... and so on
+  [buttonActionThemes.TERTIARY]: css`
+    background: transparent;
+    color: ${BLACK}7F;
+
+    &:hover {
+      color: ${OCHRE};
+    }
+  `,
 };
 
 const withThemeStyles = ({ theme }) => buttonThemeStyles[theme];
 
 export const ButtonActionBase = styled.button`
-  //Some shared css
+  align-items: center;
+  border: 0;
+  display: flex;
+  font-family: Manrope, "sans-serif";
+  font-size: 13px;
+  font-weight: 700;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 18px;
+  min-width: 160px;
+  padding: 15px;
+  text-transform: uppercase;
 
   ${withThemeStyles};
 `;
