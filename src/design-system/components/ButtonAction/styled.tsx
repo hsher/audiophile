@@ -1,6 +1,5 @@
 import { BLACK, OCHRE, WHITE } from "src/design-system/colors";
-import { baseFont } from "src/design-system/constants";
-import buttonActionThemes from "src/design-system/constants/buttonActionThemes";
+import { baseFont, buttonActionThemes } from "src/design-system/constants";
 import styled, { css } from "styled-components";
 
 const buttonThemeStyles = {
