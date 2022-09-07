@@ -1024,6 +1024,14 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
+"@types/jest-axe@^3.5.4":
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/@types/jest-axe/-/jest-axe-3.5.4.tgz#3217668ab114fdfb67da3b3f60caf18dcbc18b2e"
+  integrity sha512-S0M+Etke9v3o0PjjfA4ijoU8G0+eI+lblpGYFYw2t+PPPnPPzJBX7UKLoQjz1SfIp+Hf/bNMFvoBX8zlFVzdrQ==
+  dependencies:
+    "@types/jest" "*"
+    axe-core "^3.5.5"
+
 "@types/jest@*":
   version "28.1.7"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-28.1.7.tgz#a680c5d05b69634c2d54a63cb106d7fb1adaba16"
@@ -1393,6 +1401,11 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
+
+axe-core@^3.5.5:
+  version "3.5.6"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-3.5.6.tgz#e762a90d7f6dbd244ceacb4e72760ff8aad521b5"
+  integrity sha512-LEUDjgmdJoA3LqklSTwKYqkjcZ4HKc4ddIYGSAiSkr46NTjzg2L9RNB+lekO9P7Dlpa87+hBtzc2Fzn/+GUWMQ==
 
 axe-core@^4.4.3:
   version "4.4.3"
