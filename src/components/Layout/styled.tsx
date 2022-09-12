@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
+import { baseFont } from "src/design-system/constants";
 
 export const Main = styled.main`
   display: flex;
@@ -12,5 +13,6 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     flex: 1;
+    font-family: ${baseFont};
   }
 `;
