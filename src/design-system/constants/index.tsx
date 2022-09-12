@@ -1,10 +1,10 @@
+import actionElements from "./actionElements";
 import { baseFont } from "./baseFont";
-import buttonActionElements from "./buttonActionElements";
 import buttonActionThemes from "./buttonActionThemes";
 import { maxMobileScreen, maxTabletScreen } from "./screenSizes";
 
 export { baseFont };
-export { buttonActionElements };
+export { actionElements };
 export { buttonActionThemes };
 export { maxTabletScreen };
 export { maxMobileScreen };
