@@ -3,8 +3,8 @@ import { baseFont } from "./baseFont";
 import buttonActionThemes from "./buttonActionThemes";
 import { maxMobileScreen, maxTabletScreen } from "./screenSizes";
 
-export { baseFont };
 export { actionElements };
+export { baseFont };
 export { buttonActionThemes };
 export { maxTabletScreen };
 export { maxMobileScreen };
