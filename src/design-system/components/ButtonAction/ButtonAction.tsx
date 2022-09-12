@@ -1,5 +1,5 @@
 import { func, node, oneOf } from "prop-types";
-import { buttonActionElements, buttonActionThemes } from "src/design-system/constants";
+import { actionElements, buttonActionThemes } from "src/design-system/constants";
 
 import * as S from "./styled";
 
@@ -7,10 +7,10 @@ function ButtonAction({ children, element, href, onClick, theme, type, ...passTh
   return (
     <S.ButtonActionBase
       as={element}
-      href={element === buttonActionElements.a ? href : null}
+      href={element === actionElements.A ? href : null}
       onClick={onClick}
       theme={theme}
-      type={element === buttonActionElements.button ? type : null}
+      type={element === actionElements.BUTTON ? type : null}
       {...passThroughProps}
     >
       {children}
@@ -25,19 +25,19 @@ ButtonAction.propTypes = {
    * and HTML button element.
    *
    *  By default, ButtonAction will render a button element.
-   * Valid element types are referenced through the buttonActionElements enum:
-   * "design-system/constants/buttonbuttonActionElements".
+   * Valid element types are referenced through the actionElements enum:
+   * "design-system/constants/actionElements".
    * */
-  element: oneOf(Object.values(buttonActionElements)),
+  element: oneOf(Object.values(actionElements)),
   /**
    * When ButtonAction renders an anchor element, href is required
    * */
   href: (props) => {
-    if (!props.href && props.element === buttonActionElements.a) {
+    if (!props.href && props.element === actionElements.A) {
       return new Error("The href prop is required when ButtonAction is a link");
     }
 
-    if (typeof props.href !== "string" && props.element === buttonActionElements.a) {
+    if (typeof props.href !== "string" && props.element === actionElements.A) {
       return new Error("href must be a string");
     }
 
@@ -53,7 +53,7 @@ ButtonAction.propTypes = {
 };
 
 ButtonAction.defaultProps = {
-  element: buttonActionElements.button,
+  element: actionElements.BUTTON,
   href: null,
   onClick: null,
   theme: buttonActionThemes.PRIMARY,
