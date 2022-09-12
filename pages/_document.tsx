@@ -12,7 +12,7 @@ export default function Document() {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&display=swap"
           rel="stylesheet"
         />
         <title>React App</title>
