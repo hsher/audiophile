@@ -7,10 +7,10 @@ function ButtonAction({ children, element, href, onClick, theme, type, ...passTh
   return (
     <S.ButtonActionBase
       as={element}
-      href={element === actionElements.a ? href : null}
+      href={element === actionElements.A ? href : null}
       onClick={onClick}
       theme={theme}
-      type={element === actionElements.button ? type : null}
+      type={element === actionElements.BUTTON ? type : null}
       {...passThroughProps}
     >
       {children}
@@ -33,11 +33,11 @@ ButtonAction.propTypes = {
    * When ButtonAction renders an anchor element, href is required
    * */
   href: (props) => {
-    if (!props.href && props.element === actionElements.a) {
+    if (!props.href && props.element === actionElements.A) {
       return new Error("The href prop is required when ButtonAction is a link");
     }
 
-    if (typeof props.href !== "string" && props.element === actionElements.a) {
+    if (typeof props.href !== "string" && props.element === actionElements.A) {
       return new Error("href must be a string");
     }
 
@@ -53,7 +53,7 @@ ButtonAction.propTypes = {
 };
 
 ButtonAction.defaultProps = {
-  element: actionElements.button,
+  element: actionElements.BUTTON,
   href: null,
   onClick: null,
   theme: buttonActionThemes.PRIMARY,
