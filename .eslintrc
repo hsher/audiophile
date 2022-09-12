@@ -41,6 +41,14 @@
     ],
     "@typescript-eslint/no-explicit-any": "error"
   },
+  "overrides": [
+    {
+      "files": ["*.test.tsx"],
+      "rules": {
+        "@typescript-eslint/no-empty-function": "off",
+      }
+    }
+  ],
   "env": {
     "browser": true,
     "jest": true
