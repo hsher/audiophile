@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from "styled-components";
 import { baseFont } from "src/design-system/constants";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const Main = styled.main`
   display: flex;
