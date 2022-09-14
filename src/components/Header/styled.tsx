@@ -29,6 +29,11 @@ export const HeaderWrapper = styled(ContainerWrapper)`
     padding: 0 40px;
     position: relative;
   }
+
+  @media ${device.mobile} {
+    padding: 0;
+    position: relative;
+  }
 `;
 
 export const ContainerRow = styled(Container)`
@@ -37,17 +42,29 @@ export const ContainerRow = styled(Container)`
   display: flex;
   justify-content: space-between;
   min-height: 90px;
+
+  @media ${device.mobile} {
+    padding: 0 24px;
+  }
+`;
+
+export const MenuWrapper = styled.div`
+  display: none;
+
+  @media ${device.tablet} {
+    display: block;
+  }
+
+  @media ${device.mobile} {
+    flex: 1;
+    max-width: 50px;
+  }
 `;
 
 export const Menu = styled.button`
   background: transparent;
   border: 0;
-  display: none;
   padding: 0;
-
-  @media ${device.tablet} {
-    display: block;
-  }
 `;
 
 export const NavList = styled.ul`
@@ -61,12 +78,20 @@ export const NavList = styled.ul`
     position: absolute;
     width: 100%;
   }
+
+  @media ${device.mobile} {
+    padding: 32px 7px 36px;
+  }
 `;
 
 export const CartWrapper = styled.div`
   display: flex;
   flex: 1;
   justify-content: flex-end;
+
+  @media ${device.mobile} {
+    max-width: 50px;
+  }
 `;
 
 export const LogoWrapper = styled.div`
@@ -74,6 +99,12 @@ export const LogoWrapper = styled.div`
 
   @media ${device.tablet} {
     padding-left: 42px;
+  }
+
+  @media ${device.mobile} {
+    display: flex;
+    justify-content: center;
+    padding: 0;
   }
 `;
 

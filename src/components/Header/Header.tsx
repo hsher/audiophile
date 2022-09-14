@@ -18,9 +18,11 @@ function Header() {
   return (
     <S.HeaderWrapper backgroundColor={DARK} as="header">
       <S.ContainerRow>
-        <S.Menu type="button" onClick={handleToggleMenu}>
-          <Image src={menu} alt="open navigation" width={16} height={15} />
-        </S.Menu>
+        <S.MenuWrapper>
+          <S.Menu type="button" onClick={handleToggleMenu}>
+            <Image src={menu} alt="open navigation" width={16} height={15} />
+          </S.Menu>
+        </S.MenuWrapper>
 
         <S.LogoWrapper>
           <Link href="/">
