@@ -4,27 +4,11 @@ import { DARK, GRAY_LIGHT, OCHRE, WHITE } from "src/design-system/colors";
 import { device } from "src/design-system/constants";
 import styled from "styled-components";
 
-export const NavLink = styled.a`
-  color: ${WHITE};
-  font-size: 13px;
-  font-weight: 700;
-  height: 28px;
-  letter-spacing: 2px;
-  line-height: 25px;
-  padding: 0 16px;
-  text-decoration: none;
-
-  @media ${device.tablet} {
-    align-items: center;
-    display: flex;
-  }
-
-  &:hover {
-    color: ${OCHRE};
-  }
-`;
-
 export const HeaderWrapper = styled(ContainerWrapper)`
+  background-color: ${DARK};
+  display: flex;
+  justify-content: center;
+
   @media ${device.tablet} {
     padding: 0 40px;
     position: relative;
@@ -67,23 +51,6 @@ export const Menu = styled.button`
   padding: 0;
 `;
 
-export const NavList = styled.ul`
-  display: flex;
-  padding: 32px 0 36px;
-
-  @media ${device.tablet} {
-    background-color: ${DARK};
-    flex-direction: column;
-    padding: 32px 40px 36px;
-    position: absolute;
-    width: 100%;
-  }
-
-  @media ${device.mobile} {
-    padding: 32px 7px 36px;
-  }
-`;
-
 export const CartWrapper = styled.div`
   display: flex;
   flex: 1;
@@ -120,9 +87,46 @@ export const Nav = styled.nav`
   }
 `;
 
+export const NavList = styled.ul`
+  display: flex;
+  padding: 32px 0 36px;
+
+  @media ${device.tablet} {
+    background-color: ${DARK};
+    flex-direction: column;
+    padding: 32px 40px 36px;
+    position: absolute;
+    width: 100%;
+  }
+
+  @media ${device.mobile} {
+    padding: 32px 7px 36px;
+  }
+`;
+
 export const NavListItem = styled.li`
   @media ${device.tablet} {
     border-bottom: 1px solid ${GRAY_LIGHT}38;
     padding: 5px 0;
+  }
+`;
+
+export const NavLink = styled.a`
+  color: ${WHITE};
+  font-size: 13px;
+  font-weight: 700;
+  height: 28px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  padding: 0 16px;
+  text-decoration: none;
+
+  @media ${device.tablet} {
+    align-items: center;
+    display: flex;
+  }
+
+  &:hover {
+    color: ${OCHRE};
   }
 `;
