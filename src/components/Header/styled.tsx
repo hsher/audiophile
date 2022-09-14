@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Container from "src/components/Container";
 import { GRAY_LIGHT, OCHRE, WHITE } from "src/design-system/colors";
 import styled from "styled-components";
@@ -30,10 +29,6 @@ export const Menu = styled.button`
   border: 0;
   display: none;
   padding: 0;
-`;
-
-export const MenuIcon = styled(Image)`
-  margin-bottom: 100px;
 `;
 
 export const NavList = styled.ul`

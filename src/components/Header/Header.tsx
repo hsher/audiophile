@@ -13,7 +13,7 @@ function Header() {
     <ContainerWrapper backgroundColor={DARK} as="header">
       <S.ContainerRow>
         <S.Menu type="button">
-          <S.MenuIcon src={menu} alt="open navigation" width={16} height={15} />
+          <Image src={menu} alt="open navigation" width={16} height={15} />
         </S.Menu>
 
         <S.FullWidthColumn>
