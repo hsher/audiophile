@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "src/components/Container";
-import { DARK, GRAY_LIGHT, OCHRE, WHITE } from "src/design-system/colors";
+import { GRAY_LIGHT, OCHRE, WHITE } from "src/design-system/colors";
 import styled from "styled-components";
 
 export const NavLink = styled.a`
@@ -16,12 +16,6 @@ export const NavLink = styled.a`
   &:hover {
     color: ${OCHRE};
   }
-`;
-
-export const Header = styled.header`
-  background-color: ${DARK};
-  display: flex;
-  justify-content: center;
 `;
 
 export const ContainerRow = styled(Container)`

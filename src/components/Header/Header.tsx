@@ -3,12 +3,14 @@ import Link from "next/link";
 import cart from "public/cart.svg";
 import logo from "public/logo.svg";
 import menu from "public/menu.svg";
+import ContainerWrapper from "src/components/ContainerWrapper";
+import { DARK } from "src/design-system/colors";
 
 import * as S from "./styled";
 
 function Header() {
   return (
-    <S.Header>
+    <ContainerWrapper backgroundColor={DARK} as="header">
       <S.ContainerRow>
         <S.Menu type="button">
           <S.MenuIcon src={menu} alt="open navigation" width={16} height={15} />
@@ -57,7 +59,7 @@ function Header() {
           </Link>
         </S.FullWidthColumn>
       </S.ContainerRow>
-    </S.Header>
+    </ContainerWrapper>
   );
 }
 
