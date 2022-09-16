@@ -45,6 +45,7 @@ export const ButtonActionBase = styled.button`
   line-height: 18px;
   min-width: 160px;
   padding: 15px;
+  text-decoration: none;
   text-transform: uppercase;
 
   ${withThemeStyles};
