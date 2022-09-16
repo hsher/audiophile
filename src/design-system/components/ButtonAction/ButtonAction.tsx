@@ -11,7 +11,7 @@ function ButtonAction(props: ButtonActionProps) {
       href={element === actionElements.A ? href : null}
       onClick={onClick}
       theme={theme}
-      type={element === actionElements.BUTTON ? type : null}
+      type={element === actionElements.BUTTON ? type || "submit" : null}
       {...passThroughProps}
     >
       {children}
