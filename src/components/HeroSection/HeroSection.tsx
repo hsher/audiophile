@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeroImage from "public/HeroImage.png";
+import HeroImageMWeb from "public/HeroImageMWeb.jpg";
 import ButtonAction from "src/design-system/components/ButtonAction";
 import { actionElements } from "src/design-system/constants";
 
@@ -27,6 +28,9 @@ function HeroSection() {
       </S.Column>
 
       <S.Column>
+        <S.MobileImage>
+          <Image alt="" role="presentation" src={HeroImageMWeb} layout="fill" objectFit="cover" />
+        </S.MobileImage>
         <S.DesktopImage>
           <Image
             alt=""
