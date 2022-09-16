@@ -1,4 +1,4 @@
-import { baseFont } from "src/design-system/constants";
+import { baseFont, device } from "src/design-system/constants";
 import styled from "styled-components";
 
 export const PrimaryLarge = styled.h1`
@@ -8,6 +8,12 @@ export const PrimaryLarge = styled.h1`
   letter-spacing: 2px;
   line-height: 58px;
   text-transform: uppercase;
+
+  @media ${device.mobile} {
+    font-size: 36px;
+    letter-spacing: 1.28571px;
+    line-height: 40px;
+  }
 `;
 
 export const PrimaryMedium = styled.h2`
