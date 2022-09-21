@@ -24,8 +24,8 @@ export const Column = styled.div`
     @media ${device.tablet} {
       position: absolute;
       left: 50%;
-      transform: translate(-50%, -50%);
       top: 50%;
+      transform: translate(-50%, -50%);
       z-index: 1;
     }
 
@@ -95,9 +95,9 @@ export const Content = styled.div`
   z-index: 2;
 
   @media ${device.tablet} {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: 50%;
     padding: 125px 0;
   }
