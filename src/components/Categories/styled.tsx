@@ -1,4 +1,5 @@
 import { BLACK, GRAY } from "src/design-system/colors";
+import { device } from "src/design-system/constants";
 import styled from "styled-components";
 
 export const CategoryWrapper = styled.div`
@@ -6,6 +7,18 @@ export const CategoryWrapper = styled.div`
   gap: 30px;
   justify-content: space-between;
   padding: 200px 0 168px;
+
+  @media ${device.tablet} {
+    gap: 10px;
+    padding: 148px 40px 96px;
+  }
+
+  @media ${device.mobile} {
+    align-items: center;
+    flex-direction: column;
+    gap: 68px;
+    padding: 92px 24px 120px;
+  }
 `;
 
 export const Category = styled.div`
@@ -17,6 +30,11 @@ export const Category = styled.div`
   flex-direction: column;
   padding: 60px 15px 15px 15px;
   position: relative;
+
+  @media ${device.mobile} {
+    min-width: 327px;
+    padding: 34px 15px 7px 15px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -26,6 +44,18 @@ export const ImageWrapper = styled.div`
   top: 0;
   transform: translate(-50%, -50%);
   width: 100%;
+
+  @media ${device.mobile} {
+    display: none;
+  }
+`;
+
+export const ImageWrapperMWeb = styled(ImageWrapper)`
+  display: none;
+
+  @media ${device.mobile} {
+    display: block;
+  }
 `;
 
 export const Shadow = styled.div`

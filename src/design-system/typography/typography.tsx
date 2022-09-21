@@ -59,6 +59,12 @@ export const SecondarySmall = styled.h6`
   letter-spacing: 1.28571px;
   line-height: 25px;
   text-transform: uppercase;
+
+  @media ${device.tablet} {
+    font-size: 15px;
+    letter-spacing: 1.07143px;
+    line-height: 20px;
+  }
 `;
 
 export const Wide = styled.p`
