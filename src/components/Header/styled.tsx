@@ -106,6 +106,7 @@ export const NavLink = styled.a`
   line-height: 25px;
   padding: 0 16px;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
     color: ${OCHRE};

@@ -6,6 +6,7 @@ import menu from "public/menu.svg";
 import { useState } from "react";
 import Categories from "src/components/Categories";
 import { DARK } from "src/design-system/colors";
+import { categories } from "src/mocks/categories";
 
 import * as S from "./styled";
 
@@ -41,21 +42,14 @@ function Header() {
                   <S.NavLink>HOME</S.NavLink>
                 </Link>
               </li>
-              <li>
-                <Link href="/" passHref>
-                  <S.NavLink>HEADPHONES</S.NavLink>
-                </Link>
-              </li>
-              <li>
-                <Link href="/" passHref>
-                  <S.NavLink>SPEAKERS</S.NavLink>
-                </Link>
-              </li>
-              <li>
-                <Link href="/" passHref>
-                  <S.NavLink>EARPHONES</S.NavLink>
-                </Link>
-              </li>
+
+              {categories.map(({ name, path }) => (
+                <li key={path}>
+                  <Link href={path} passHref>
+                    <S.NavLink>{name}</S.NavLink>
+                  </Link>
+                </li>
+              ))}
             </S.NavList>
             <S.CategoriesWrapper>
               <Categories />
