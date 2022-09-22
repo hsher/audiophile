@@ -4,14 +4,24 @@ import * as S from "./styled";
 
 function ButtonAction(props: ButtonActionProps) {
   const { children, element, href, onClick, theme, type, ...passThroughProps } = props;
+  let typeResult;
+  let hrefResult;
+
+  if (element === actionElements.A) {
+    hrefResult = href;
+    typeResult = null;
+  } else if (element === actionElements.BUTTON || element === null) {
+    hrefResult = null;
+    typeResult = type || "submit";
+  }
 
   return (
     <S.ButtonActionBase
       as={element}
-      href={element === actionElements.A ? href : null}
+      href={hrefResult}
       onClick={onClick}
       theme={theme}
-      type={element === actionElements.BUTTON ? type || "submit" : null}
+      type={typeResult}
       {...passThroughProps}
     >
       {children}
@@ -20,7 +30,7 @@ function ButtonAction(props: ButtonActionProps) {
 }
 
 ButtonAction.defaultProps = {
-  element: actionElements.BUTTON,
+  element: null,
   href: null,
   onClick: () => null,
   theme: buttonActionThemes.PRIMARY,

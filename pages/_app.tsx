@@ -3,7 +3,6 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import Layout from "src/components/Layout";
 
-import "../styles/App.css";
 import "../styles/reset.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
