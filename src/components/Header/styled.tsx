@@ -1,6 +1,6 @@
 import Container from "src/components/Container";
 import ContainerWrapper from "src/components/ContainerWrapper";
-import { DARK, GRAY_LIGHT, OCHRE, WHITE } from "src/design-system/colors";
+import { BLACK, DARK, GRAY_LIGHT, OCHRE, WHITE } from "src/design-system/colors";
 import { device } from "src/design-system/constants";
 import styled from "styled-components";
 
@@ -12,11 +12,11 @@ export const HeaderWrapper = styled(ContainerWrapper)`
   @media ${device.tablet} {
     padding: 0 40px;
     position: relative;
+    z-index: 4;
   }
 
   @media ${device.mobile} {
     padding: 0;
-    position: relative;
   }
 `;
 
@@ -84,6 +84,7 @@ export const Nav = styled.nav`
     left: 0;
     position: absolute;
     width: 100%;
+    z-index: 3;
   }
 `;
 
@@ -92,22 +93,7 @@ export const NavList = styled.ul`
   padding: 32px 0 36px;
 
   @media ${device.tablet} {
-    background-color: ${DARK};
-    flex-direction: column;
-    padding: 32px 40px 36px;
-    position: absolute;
-    width: 100%;
-  }
-
-  @media ${device.mobile} {
-    padding: 32px 7px 36px;
-  }
-`;
-
-export const NavListItem = styled.li`
-  @media ${device.tablet} {
-    border-bottom: 1px solid ${GRAY_LIGHT}38;
-    padding: 5px 0;
+    display: none;
   }
 `;
 
@@ -121,12 +107,34 @@ export const NavLink = styled.a`
   padding: 0 16px;
   text-decoration: none;
 
-  @media ${device.tablet} {
-    align-items: center;
-    display: flex;
-  }
-
   &:hover {
     color: ${OCHRE};
+  }
+`;
+
+export const CategoriesWrapper = styled.div`
+  background-color: ${WHITE};
+  border-radius: 0px 0px 8px 8px;
+  display: none;
+  position: absolute;
+  width: 100%;
+
+  @media ${device.tablet} {
+    display: block;
+  }
+`;
+
+export const Shadow = styled.div`
+  background-color: ${BLACK};
+  content: "";
+  display: none;
+  height: 100%;
+  opacity: 0.4;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+  @media ${device.tablet} {
+    display: ${(props) => (props.menuIsOpen ? "block" : "none")};
   }
 `;
