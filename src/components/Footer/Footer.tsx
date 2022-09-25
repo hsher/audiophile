@@ -24,18 +24,18 @@ function Footer() {
 
           <S.Nav>
             <S.NavList>
-              <li>
+              <S.NavItem>
                 <Link href="/" passHref>
                   <S.NavLink>HOME</S.NavLink>
                 </Link>
-              </li>
+              </S.NavItem>
 
               {categories.map(({ name, path }) => (
-                <li key={path}>
+                <S.NavItem key={path}>
                   <Link href={path} passHref>
                     <S.NavLink>{name}</S.NavLink>
                   </Link>
-                </li>
+                </S.NavItem>
               ))}
             </S.NavList>
           </S.Nav>
@@ -49,17 +49,17 @@ function Footer() {
           <S.UniteWrapper>
             <S.Copyright>Copyright 2021. All Rights Reserved</S.Copyright>
             <S.SocialWrapper>
-              <Link href="/">
+              <Link href="/" passHref>
                 <S.SocialIcon>
                   <Image src={facebook} alt="facebook" width={24} height={24} />
                 </S.SocialIcon>
               </Link>
-              <Link href="/">
+              <Link href="/" passHref>
                 <S.SocialIcon>
                   <Image src={twitter} alt="twitter" width={24} height={19} />
                 </S.SocialIcon>
               </Link>
-              <Link href="/">
+              <Link href="/" passHref>
                 <S.SocialIcon>
                   <Image src={instagramm} alt="instagramm" width={24} height={24} />
                 </S.SocialIcon>
