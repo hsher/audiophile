@@ -1,0 +1,103 @@
+import Container from "src/components/Container";
+import ContainerWrapper from "src/components/ContainerWrapper";
+import { DARK, OCHRE, WHITE } from "src/design-system/colors";
+import { baseFont } from "src/design-system/constants";
+import styled from "styled-components";
+
+export const FooterWrapper = styled(ContainerWrapper)`
+  background-color: ${DARK};
+  display: flex;
+  justify-content: center;
+`;
+
+export const ContainerWithDecor = styled(Container)`
+  padding-bottom: 48px;
+
+  &::before {
+    background-color: ${OCHRE};
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100px;
+  }
+`;
+
+export const NavigationRow = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0 36px;
+`;
+
+export const LogoWrapper = styled.div``;
+
+export const Nav = styled.nav``;
+
+export const NavList = styled.ul`
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const NavLink = styled.a`
+  color: ${WHITE};
+  font-size: 13px;
+  font-weight: 700;
+  height: 28px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  padding: 0 33px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: ${OCHRE};
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+`;
+
+export const Description = styled.div`
+  color: ${WHITE};
+  font-family: ${baseFont};
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: 0.5;
+  padding: 0 0 56px;
+  width: 50%;
+`;
+
+export const Copyright = styled.div`
+  color: ${WHITE};
+  font-family: ${baseFont};
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  opacity: 0.5;
+  width: 50%;
+`;
+
+export const SocialWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, calc(-50% - 10px));
+  z-index: 1;
+`;
+
+export const SocialIcon = styled.a`
+  filter: invert(100%) sepia(100%) saturate(16%) hue-rotate(286deg) brightness(105%) contrast(104%);
+  margin: 0 0 0 16px;
+
+  &:hover {
+    filter: invert(70%) sepia(53%) saturate(2862%) hue-rotate(328deg) brightness(92%) contrast(83%);
+  }
+`;
+
+export const InfoWrapper = styled.div`
+  position: relative;
+`;
