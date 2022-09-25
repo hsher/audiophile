@@ -1,7 +1,7 @@
 import Container from "src/components/Container";
 import ContainerWrapper from "src/components/ContainerWrapper";
 import { DARK, OCHRE, WHITE } from "src/design-system/colors";
-import { baseFont } from "src/design-system/constants";
+import { baseFont, device } from "src/design-system/constants";
 import styled from "styled-components";
 
 export const FooterWrapper = styled(ContainerWrapper)`
@@ -12,6 +12,10 @@ export const FooterWrapper = styled(ContainerWrapper)`
 
 export const ContainerWithDecor = styled(Container)`
   padding-bottom: 48px;
+
+  @media ${device.tablet} {
+    padding: 0 40px 46px;
+  }
 
   &::before {
     background-color: ${OCHRE};
@@ -27,11 +31,21 @@ export const NavigationRow = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 70px 0 36px;
+
+  @media ${device.tablet} {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 56px 0 32px;
+  }
 `;
 
 export const LogoWrapper = styled.div``;
 
-export const Nav = styled.nav``;
+export const Nav = styled.nav`
+  @media ${device.tablet} {
+    padding-top: 30px;
+  }
+`;
 
 export const NavList = styled.ul`
   display: flex;
@@ -53,8 +67,18 @@ export const NavLink = styled.a`
     color: ${OCHRE};
   }
 
+  &:first-child {
+    @media ${device.tablet} {
+      padding-left: 0;
+    }
+  }
+
   &:last-child {
     padding-right: 0;
+
+    @media ${device.tablet} {
+      padding-right: 33px;
+    }
   }
 `;
 
@@ -67,6 +91,10 @@ export const Description = styled.div`
   opacity: 0.5;
   padding: 0 0 56px;
   width: 50%;
+
+  @media ${device.tablet} {
+    width: 100%;
+  }
 `;
 
 export const Copyright = styled.div`
@@ -76,7 +104,6 @@ export const Copyright = styled.div`
   font-weight: 700;
   line-height: 25px;
   opacity: 0.5;
-  width: 50%;
 `;
 
 export const SocialWrapper = styled.div`
@@ -87,6 +114,11 @@ export const SocialWrapper = styled.div`
   top: 50%;
   transform: translate(0, calc(-50% - 10px));
   z-index: 1;
+
+  @media ${device.tablet} {
+    position: static;
+    transform: none;
+  }
 `;
 
 export const SocialIcon = styled.a`
@@ -100,4 +132,12 @@ export const SocialIcon = styled.a`
 
 export const InfoWrapper = styled.div`
   position: relative;
+`;
+
+export const UniteWrapper = styled.div`
+  @media ${device.tablet} {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 `;

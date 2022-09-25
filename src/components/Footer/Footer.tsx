@@ -46,24 +46,26 @@ function Footer() {
             music lovers and sound specialists who are devoted to helping you get the most out of
             personal audio. Come and visit our demo facility - we’re open 7 days a week.
           </S.Description>
-          <S.Copyright>Copyright 2021. All Rights Reserved</S.Copyright>
-          <S.SocialWrapper>
-            <Link href="/">
-              <S.SocialIcon>
-                <Image src={facebook} alt="facebook" width={24} height={24} />
-              </S.SocialIcon>
-            </Link>
-            <Link href="/">
-              <S.SocialIcon>
-                <Image src={twitter} alt="twitter" width={24} height={19} />
-              </S.SocialIcon>
-            </Link>
-            <Link href="/">
-              <S.SocialIcon>
-                <Image src={instagramm} alt="instagramm" width={24} height={24} />
-              </S.SocialIcon>
-            </Link>
-          </S.SocialWrapper>
+          <S.UniteWrapper>
+            <S.Copyright>Copyright 2021. All Rights Reserved</S.Copyright>
+            <S.SocialWrapper>
+              <Link href="/">
+                <S.SocialIcon>
+                  <Image src={facebook} alt="facebook" width={24} height={24} />
+                </S.SocialIcon>
+              </Link>
+              <Link href="/">
+                <S.SocialIcon>
+                  <Image src={twitter} alt="twitter" width={24} height={19} />
+                </S.SocialIcon>
+              </Link>
+              <Link href="/">
+                <S.SocialIcon>
+                  <Image src={instagramm} alt="instagramm" width={24} height={24} />
+                </S.SocialIcon>
+              </Link>
+            </S.SocialWrapper>
+          </S.UniteWrapper>
         </S.InfoWrapper>
       </S.ContainerWithDecor>
     </S.FooterWrapper>
