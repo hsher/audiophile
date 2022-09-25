@@ -1,3 +1,4 @@
+import Footer from "src/components/Footer";
 import Header from "src/components/Header";
 
 import * as S from "./styled";
@@ -8,6 +9,7 @@ export default function Layout({ children }) {
       <S.GlobalStyle />
       <Header />
       <S.Main>{children}</S.Main>
+      <Footer />
     </>
   );
 }
