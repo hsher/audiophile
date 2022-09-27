@@ -3,7 +3,9 @@ import Header from "src/components/Header";
 
 import * as S from "./styled";
 
-export default function Layout({ children }) {
+export default function Layout(props: LayoutProps) {
+  const { children } = props;
+
   return (
     <>
       <S.GlobalStyle />
@@ -12,4 +14,8 @@ export default function Layout({ children }) {
       <Footer />
     </>
   );
+}
+
+interface LayoutProps {
+  children: React.ReactNode;
 }

@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <>
-      <S.HeaderWrapper backgroundColor={DARK} as="header">
+      <S.HeaderWrapper backgroundColor={DARK} element="header">
         <S.ContainerRow>
           <S.MenuWrapper>
             <S.Menu type="button" onClick={handleToggleMenu}>
