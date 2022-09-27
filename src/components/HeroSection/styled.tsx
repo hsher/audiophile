@@ -91,6 +91,7 @@ export const DesktopImage = styled.div`
 `;
 
 export const Content = styled.div`
+  margin-top: -30px;
   position: relative;
   z-index: 2;
 
@@ -98,8 +99,9 @@ export const Content = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: 0;
     max-width: 50%;
-    padding: 125px 0;
+    padding: 125px 0 167px;
   }
 
   @media ${device.mobile} {
