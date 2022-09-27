@@ -31,7 +31,9 @@ export const ButtonWrapper = styled.div`
 
 export const DesktopImage = styled.div`
   border-radius: 8px;
+  height: 100%;
   overflow: hidden;
+  position: relative;
 `;
 
 export const MobileImage = styled.div`
@@ -40,5 +42,4 @@ export const MobileImage = styled.div`
 
 export const Col = styled.div`
   flex: 1;
-  position: relative;
 `;
