@@ -5,7 +5,7 @@ import { Body, PrimaryLarge } from "src/design-system/typography";
 import styled from "styled-components";
 
 export const FirstProductWrapper = styled(ContainerWrapper)`
-  padding-bottom: 47px;
+  padding-bottom: 48px;
 `;
 
 export const ContainerRow = styled(Container)`
