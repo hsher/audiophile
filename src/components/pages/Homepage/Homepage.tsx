@@ -4,6 +4,7 @@ import ContainerWrapper from "src/components/ContainerWrapper";
 import FirstProduct from "src/components/FirstProduct";
 import HeroSection from "src/components/HeroSection";
 import SecondProduct from "src/components/SecondProduct";
+import ThirdProduct from "src/components/ThirdProduct";
 import { DARK, GRAY_LIGHT } from "src/design-system/colors";
 
 function Homepage() {
@@ -20,6 +21,7 @@ function Homepage() {
           <Categories />
           <FirstProduct />
           <SecondProduct />
+          <ThirdProduct />
         </Container>
       </ContainerWrapper>
     </>
