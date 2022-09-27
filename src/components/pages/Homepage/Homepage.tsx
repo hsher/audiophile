@@ -1,6 +1,7 @@
 import Categories from "src/components/Categories";
 import Container from "src/components/Container";
 import ContainerWrapper from "src/components/ContainerWrapper";
+import FirstProduct from "src/components/FirstProduct";
 import HeroSection from "src/components/HeroSection";
 import { DARK, GRAY_LIGHT } from "src/design-system/colors";
 
@@ -16,6 +17,12 @@ function Homepage() {
       <ContainerWrapper backgroundColor={GRAY_LIGHT}>
         <Container>
           <Categories />
+        </Container>
+      </ContainerWrapper>
+
+      <ContainerWrapper backgroundColor={GRAY_LIGHT}>
+        <Container>
+          <FirstProduct />
         </Container>
       </ContainerWrapper>
     </>
