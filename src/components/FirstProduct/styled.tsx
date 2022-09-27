@@ -21,7 +21,9 @@ export const Content = styled.div`
   z-index: 2;
 `;
 
-export const SectionTitle = styled(PrimaryLarge)`
+export const SectionTitle = styled(PrimaryLarge).attrs({
+  as: "h2",
+})`
   color: ${WHITE};
   padding: 0 50px 24px 0;
 `;
