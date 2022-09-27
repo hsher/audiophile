@@ -31,6 +31,10 @@ export const Category = styled.div`
   padding: 60px 15px 15px 15px;
   position: relative;
 
+  @media ${device.tablet} {
+    padding: 42px 15px 8px 15px;
+  }
+
   @media ${device.mobile} {
     min-width: 327px;
     padding: 34px 15px 7px 15px;
@@ -45,7 +49,7 @@ export const ImageWrapper = styled.div`
   transform: translate(-50%, -50%);
   width: 100%;
 
-  @media ${device.mobile} {
+  @media ${device.tablet} {
     display: none;
   }
 `;
@@ -53,7 +57,7 @@ export const ImageWrapper = styled.div`
 export const ImageWrapperMWeb = styled(ImageWrapper)`
   display: none;
 
-  @media ${device.mobile} {
+  @media ${device.tablet} {
     display: block;
   }
 `;
@@ -64,6 +68,12 @@ export const Shadow = styled.div`
   height: 18px;
   margin-bottom: 38px;
   width: 122px;
+
+  @media ${device.tablet} {
+    height: 14px;
+    margin-bottom: 33px;
+    width: 95px;
+  }
 `;
 
 export const LinkText = styled.span`
