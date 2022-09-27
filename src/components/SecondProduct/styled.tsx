@@ -1,37 +1,28 @@
 import Container from "src/components/Container";
 import ContainerWrapper from "src/components/ContainerWrapper";
-import { WHITE } from "src/design-system/colors";
-import { Body, PrimaryLarge } from "src/design-system/typography";
+import { SecondaryLarge } from "src/design-system/typography";
 import styled from "styled-components";
 
-export const FirstProductWrapper = styled(ContainerWrapper)`
+export const SecondProductWrapper = styled(ContainerWrapper)`
   padding-bottom: 48px;
 `;
 
 export const ContainerRow = styled(Container)`
   display: flex;
-  justify-content: flex-end;
   position: relative;
 `;
 
 export const Content = styled.div`
-  padding: 134px 80px 123px 0;
+  padding: 102px 0 101px 94px;
   position: relative;
   width: 40%;
   z-index: 2;
 `;
 
-export const SectionTitle = styled(PrimaryLarge).attrs({
+export const SectionTitle = styled(SecondaryLarge).attrs({
   as: "h2",
 })`
-  color: ${WHITE};
-  padding: 0 50px 24px 0;
-`;
-
-export const Description = styled(Body)`
-  color: ${WHITE};
-  opacity: 0.75;
-  padding-bottom: 40px;
+  padding: 0 50px 31px 0;
 `;
 
 export const ButtonWrapper = styled.div`
