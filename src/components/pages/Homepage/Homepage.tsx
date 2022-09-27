@@ -1,3 +1,4 @@
+import About from "src/components/About";
 import Categories from "src/components/Categories";
 import Container from "src/components/Container";
 import ContainerWrapper from "src/components/ContainerWrapper";
@@ -22,6 +23,7 @@ function Homepage() {
           <FirstProduct />
           <SecondProduct />
           <ThirdProduct />
+          <About />
         </Container>
       </ContainerWrapper>
     </>
