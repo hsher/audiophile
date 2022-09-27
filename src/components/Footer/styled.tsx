@@ -1,14 +1,7 @@
 import Container from "src/components/Container";
-import ContainerWrapper from "src/components/ContainerWrapper";
-import { DARK, OCHRE, WHITE } from "src/design-system/colors";
+import { OCHRE, WHITE } from "src/design-system/colors";
 import { baseFont, device } from "src/design-system/constants";
 import styled from "styled-components";
-
-export const FooterWrapper = styled(ContainerWrapper)`
-  background-color: ${DARK};
-  display: flex;
-  justify-content: center;
-`;
 
 export const ContainerWithDecor = styled(Container)`
   padding-bottom: 48px;
@@ -51,8 +44,6 @@ export const NavigationRow = styled.div`
     padding: 48px 0 32px;
   }
 `;
-
-export const LogoWrapper = styled.div``;
 
 export const Nav = styled.nav`
   @media ${device.tablet} {

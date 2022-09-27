@@ -4,6 +4,7 @@ import facebook from "public/facebook.svg";
 import instagramm from "public/instagramm.svg";
 import logo from "public/logo.svg";
 import twitter from "public/twitter.svg";
+import ContainerWrapper from "src/components/ContainerWrapper";
 import { DARK } from "src/design-system/colors";
 import { categories } from "src/mocks/categories";
 
@@ -11,16 +12,16 @@ import * as S from "./styled";
 
 function Footer() {
   return (
-    <S.FooterWrapper backgroundColor={DARK} as="Footer">
+    <ContainerWrapper backgroundColor={DARK} element="footer">
       <S.ContainerWithDecor>
         <S.NavigationRow>
-          <S.LogoWrapper>
+          <div>
             <Link href="/">
               <a>
                 <Image src={logo} alt="audiophile logo" width={143} height={25} />
               </a>
             </Link>
-          </S.LogoWrapper>
+          </div>
 
           <S.Nav>
             <S.NavList>
@@ -68,7 +69,7 @@ function Footer() {
           </S.UniteWrapper>
         </S.InfoWrapper>
       </S.ContainerWithDecor>
-    </S.FooterWrapper>
+    </ContainerWrapper>
   );
 }
 
