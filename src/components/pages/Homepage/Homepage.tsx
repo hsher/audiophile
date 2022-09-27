@@ -17,11 +17,6 @@ function Homepage() {
       <ContainerWrapper backgroundColor={GRAY_LIGHT}>
         <Container>
           <Categories />
-        </Container>
-      </ContainerWrapper>
-
-      <ContainerWrapper backgroundColor={GRAY_LIGHT}>
-        <Container>
           <FirstProduct />
         </Container>
       </ContainerWrapper>
