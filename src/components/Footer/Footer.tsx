@@ -15,13 +15,13 @@ function Footer() {
     <ContainerWrapper backgroundColor={DARK} element="footer">
       <S.ContainerWithDecor>
         <S.NavigationRow>
-          <S.LogoWrapper>
+          <div>
             <Link href="/">
               <a>
                 <Image src={logo} alt="audiophile logo" width={143} height={25} />
               </a>
             </Link>
-          </S.LogoWrapper>
+          </div>
 
           <S.Nav>
             <S.NavList>

@@ -1,14 +1,10 @@
 import Container from "src/components/Container";
 import ContainerWrapper from "src/components/ContainerWrapper";
-import { BLACK, DARK, GRAY_LIGHT, OCHRE, WHITE } from "src/design-system/colors";
+import { BLACK, GRAY_LIGHT, OCHRE, WHITE } from "src/design-system/colors";
 import { device } from "src/design-system/constants";
 import styled from "styled-components";
 
 export const HeaderWrapper = styled(ContainerWrapper)`
-  background-color: ${DARK};
-  display: flex;
-  justify-content: center;
-
   @media ${device.tablet} {
     padding: 0 40px;
     position: relative;
