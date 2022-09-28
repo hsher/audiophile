@@ -70,6 +70,8 @@ export const Description = styled(Body)`
   padding-bottom: 40px;
 
   @media ${device.tablet} {
+    max-width: initial;
+    padding: 0 10px 40px;
     text-align: center;
   }
 
@@ -101,7 +103,7 @@ export const Content = styled.div`
     flex-direction: column;
     margin-top: 0;
     max-width: 50%;
-    padding: 125px 0 167px;
+    padding: 125px 0 168px;
   }
 
   @media ${device.mobile} {
