@@ -1,5 +1,6 @@
 import Image from "next/image";
 import AboutBg from "public/AboutBg.jpg";
+import AboutBgTablet from "public/AboutBgTablet.jpg";
 
 import * as S from "./styled";
 
@@ -23,9 +24,17 @@ function About() {
         </S.Col>
 
         <S.Col>
-          <S.MobileImage>
-            <Image alt="" role="presentation" src={AboutBg} layout="fill" objectFit="cover" />
-          </S.MobileImage>
+          <S.TabletImage>
+            <Image
+              src={AboutBgTablet}
+              alt=""
+              role="presentation"
+              layout="responsive"
+              objectFit="cover"
+              width="689"
+              height="300"
+            />
+          </S.TabletImage>
           <S.DesktopImage>
             <Image alt="" role="presentation" src={AboutBg} layout="fill" objectFit="cover" />
           </S.DesktopImage>
