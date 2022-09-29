@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ThirdProductBg from "public/ThirdProductBg.jpg";
+import ThirdProductBgTablet from "public/ThirdProductBgTablet.jpg";
 import ButtonAction from "src/design-system/components/ButtonAction";
 import { actionElements, buttonActionThemes } from "src/design-system/constants";
 
@@ -10,15 +11,17 @@ function ThirdProduct() {
     <S.ThirdProductWrapper>
       <S.ContainerRow>
         <S.Col>
-          <S.MobileImage>
+          <S.TabletImage>
             <Image
+              src={ThirdProductBgTablet}
               alt=""
               role="presentation"
-              src={ThirdProductBg}
-              layout="fill"
+              layout="responsive"
               objectFit="cover"
+              width="339"
+              height="320"
             />
-          </S.MobileImage>
+          </S.TabletImage>
           <S.DesktopImage>
             <Image
               alt=""
