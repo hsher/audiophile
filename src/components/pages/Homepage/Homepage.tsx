@@ -16,7 +16,6 @@ function Homepage() {
           <HeroSection />
         </Container>
       </ContainerWrapper>
-
       <ContainerWrapper backgroundColor={GRAY_LIGHT}>
         <Container>
           <Categories />

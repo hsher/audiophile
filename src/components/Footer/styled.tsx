@@ -121,6 +121,8 @@ export const Description = styled.div`
 
   @media ${device.tablet} {
     width: 100%;
+
+    padding: 0 0 80px;
   }
 
   @media ${device.mobile} {
