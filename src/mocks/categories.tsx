@@ -14,7 +14,7 @@ export const categories = [
     imageMWebHeight: 104,
     imageWidth: 124,
     imageMWebWidth: 80,
-    path: "/#headphones",
+    path: "/categories/headphones",
   },
   {
     name: "Speakers",
